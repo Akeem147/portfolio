@@ -29,6 +29,7 @@ header.sticky {
   background: var(--bg-color);
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   padding: 16px 10%;
+  z-index: 1;
 }
 
 @media (min-width: 320px) {
@@ -194,7 +195,7 @@ header.sticky {
   .about {
     padding: 70px 10%;
     background: var(--secondary-color);
-    z-index: -100;
+  
   }
 
   .about h1 {
@@ -324,6 +325,17 @@ header.sticky {
     margin-right: 15px;
   }
 
+  .row1 {
+    background-color: #2d343f;
+    border-radius: 28px;
+    border-radius: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 20px;
+    transition: all 0.5s ease;
+    margin-right: 15px;
+    height: 590px;
+  }
+
   .row img {
     height: auto;
     width: 100%;
@@ -331,12 +343,21 @@ header.sticky {
     margin-bottom: 1.4rem;
   }
 
-  .main-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
+  .row1 img {
+    height: auto;
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
   }
+
+  .row-icon{
+    margin-bottom: 12px;
+  }
+
+  .project_details{
+    line-height: 22px;
+  }
+
 
   .row h5 {
     font-size: 20px;
@@ -560,6 +581,10 @@ header.sticky {
   .row {
     margin-right: 10px;
   }
+
+  .row1{
+    height: 550px;
+  }
 }
 
 @media (min-width: 375px) {
@@ -663,6 +688,10 @@ header.sticky {
 
   .row {
     margin-right: 10px;
+  }
+
+  .row1{
+    height: 550px;
   }
 }
 
@@ -871,6 +900,10 @@ header.sticky {
 
   .row {
     margin-right: 10px;
+  }
+
+  .row1{
+    height: 510px;
   }
 
   .footer {
@@ -1434,10 +1467,20 @@ header.sticky {
     align-items: center;
     justify-content: center;
     background-color: #075fe4;
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     color: var(--text-color);
     font-size: 27px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .arrow{
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
   }
 }
